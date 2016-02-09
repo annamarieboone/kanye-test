@@ -481,7 +481,7 @@ hr {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width:550px) { 
+@media (min-width:768px) { 
 
 	.show-desktop {
 		display: none;
@@ -533,7 +533,7 @@ hr {
 
 
 /* Medium devices (desktops, 960px and up) */
-@media (min-width:850px) { 
+@media (min-width:960px) { 
 
 	.show-desktop {
 	display: block;
