@@ -28,6 +28,10 @@ Assume anything not under a media query is for .col-xs */
 		text-align: center;
 	}
 
+	.smaller {
+		font-size: 2.5em;
+	}
+
 	/*h2 is the italicized subhead.*/
 	h2{
 		font-size: 1.8em;
