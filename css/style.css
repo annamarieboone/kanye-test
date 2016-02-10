@@ -351,16 +351,38 @@ hr {
 /* this is where i am adding all my shit*/
 
 .intro {
-		font-size: 26px;
+		font-size: 25px;
 		line-height: 1.8;
 		text-align: center;
 		font-family: 'Lato';
 		font-weight: 300;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+	.introsmaller {
+		font-size: 20px;
+		line-height: 1.5;
+		text-align: center;
+		font-family: 'Lato';
+		font-weight: 300;
 		margin-top: 1em;
+		margin-bottom: 1em;
 	}
 
 	#IDS {
 	width: 60%;
+}
+
+.padbottom {
+	margin-bottom: 3em;
+}
+
+.yearalbum {
+	font-family: 'Roboto Slab';
+	font-weight: 300;
+	font-size: 16px;
+	margin-bottom: 1em;
 }
 
 .show-desktop {
@@ -368,26 +390,11 @@ hr {
 }
 
 .square {
-	width: 50px;
+	width: 45px;
 	height: auto;
-	margin-top: 2em;
-	margin-left: 25px;
-}
+	margin: 0 auto;
 
-.tilt {
-  -webkit-transition: all 0.5s ease;
-     -moz-transition: all 0.5s ease;
-       -o-transition: all 0.5s ease;
-      -ms-transition: all 0.5s ease;
-          transition: all 0.5s ease;
-}
- 
-.tilt:hover {
-  -webkit-transform: rotate(-5deg);
-     -moz-transform: rotate(-5deg);
-       -o-transform: rotate(-5deg);
-      -ms-transform: rotate(-5deg);
-          transform: rotate(-5deg);
+	display: block;
 }
 
 .bold {
@@ -404,13 +411,11 @@ hr {
 
 .menunav {
 	font-family: 'Lato';
-	font-size: 16px;
+	font-size: 13px;
 	font-weight: 900;
 	text-transform: uppercase;
 	text-align: center;
 	color: #CF00BA;
-	display: inline-block;
-	vertical-align: top;
 }
 
 .menunav:hover {
@@ -450,7 +455,6 @@ hr {
 	font-family: 'Roboto Slab';
 	font-weight: 300;
 	font-size: 20px;
-	margin-top: 1em;
 }
 
 .thumb {
@@ -468,11 +472,23 @@ hr {
 	display: block;
 }
 
+.show-desktop {
+	display: none;
+}
+
 .block{
 	display: inline-block;
 	width: 45%;
 	height: auto;
 }
+
+.number {
+	font-weight: 900;
+	font-size: 30px;
+	background-color: yellow;
+
+}
+
 
 /*types of media*/
 
@@ -481,14 +497,14 @@ hr {
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width:768px) { 
+@media (min-width:600px) { 
 
 	.show-desktop {
-		display: none;
+		display: block;
 	}
 
 	.show-mobile {
-		display: block;
+		display: none;
 	}
 
 	h2{
@@ -649,6 +665,7 @@ hr {
 	text-transform: uppercase;
 	text-align: center;
 	color: #CF00BA;
+	border: none;
 }
 
 .menunav:hover {
